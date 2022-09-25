@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+/* font-family: 'Acme', sans-serif; */
+body{
+    background-color: rgba(24, 22, 22, 0.897);
+    color: green;
+    font-size: 30px;
+    font-family: 'Acme', sans-serif;
+}
+#board{
+    width: 90%;
+    border-left: 5px solid green;
+    background-color: #000;
+    color: green;
+    margin: 50px auto;
+}
+a{
+    text-decoration: none;
+    color: yellow;
+    transition: all linear 0.3s;
+    font-size: 25px;
+}
+a:hover{
+    color: red;
+    transition: all linear 0.3s;
+}
+.class{
+    border-bottom: 5px solid green;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.js{
+    padding: 20px;
+}
