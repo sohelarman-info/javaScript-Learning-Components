@@ -1,33 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 /* font-family: 'Acme', sans-serif; */
-body{
-    background-color: rgba(24, 22, 22, 0.897);
-    color: green;
-    font-size: 30px;
-    font-family: 'Acme', sans-serif;
+body {
+  background-color: rgba(24, 22, 22, 0.897);
+  color: green;
+  font-family: "Acme", sans-serif;
 }
-#board{
-    width: 90%;
-    border-left: 5px solid green;
-    background-color: #000;
-    color: green;
-    margin: 50px auto;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 }
-a{
-    text-decoration: none;
-    color: yellow;
-    transition: all linear 0.3s;
-    font-size: 25px;
+button {
+  background-color: rgb(250, 92, 0);
+  color: white;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all linear 0.3s;
+  cursor: pointer;
+  font-family: acme;
+  border: none;
 }
-a:hover{
-    color: red;
-    transition: all linear 0.3s;
+button:hover {
+  background-color: green;
+  transition: all linear 0.3s;
 }
-.class{
-    border-bottom: 5px solid green;
-    padding: 20px;
-    margin-bottom: 10px;
+input[type="submit"] {
+  background-color: rgb(250, 92, 0);
+  color: white;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all linear 0.3s;
+  cursor: pointer;
+  font-family: acme;
 }
-.js{
-    padding: 20px;
+input {
+  color: green;
+  background-color: rgb(158, 248, 158);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all linear 0.3s;
+  font-family: acme;
+  border: none;
+}
+input[type="submit"]:hover {
+  background-color: green;
+  transition: all linear 0.3s;
+  border: none;
+}
+option {
+  padding: 5px;
+}
+select-item {
+  padding: 10px;
+}
+#board {
+  width: 90%;
+  border-left: 5px solid green;
+  background-color: #000;
+  color: green;
+  margin: 50px auto;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: yellow;
+  transition: all linear 0.3s;
+  font-size: 25px;
+}
+a:hover {
+  color: red;
+  transition: all linear 0.3s;
+}
+.class {
+  border-bottom: 5px solid green;
+  padding: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.class::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 15px;
+  background-color: green;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
+  position: absolute;
+  left: 30px;
+  top: 77px;
+}
+.code {
+  padding: 0 20px;
+}
+.js {
+  padding: 20px;
+}
+.para-style {
+  color: red;
+  font-weight: bold;
+}
+.anim {
+  box-shadow: blue 1px 1px 10px 4px;
 }
